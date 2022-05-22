@@ -20,8 +20,11 @@ function paintToDo(newToDo) {
     const li = document.createElement("li");
     const span = document.createElement("span");
     const button = document.createElement("button");
+    button.style.marginLeft = "5px";
     li.id = newToDo.id;
-    button.innerText = "삭제"
+    li.style.fontSize = "20px"
+    button.innerText = "✔️"
+    button.className = "del-btn"
     span.innerText = newToDo.text;
     li.appendChild(span);
     li.appendChild(button);
